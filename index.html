@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les Boudeuses — Bar à salades, pâtes & coffee shop à Saint-Lô. Fast-good le midi, salon de thé l'après-midi. Produits frais, fait maison.">
+  <meta name="keywords" content="restaurant Saint-Lô, bar à salades, coffee shop, Les Boudeuses, fast-good, pâtisserie">
+  <title>Les Boudeuses — Bar à salades • Pâtes • Coffee shop | Saint-Lô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&family=Pacifico&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" data-img-favicon href="" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="nav__logo">
+        <img data-img="logo" alt="Les Boudeuses" class="nav__logo-img">
+        <span class="nav__logo-text">Les Boudeuses</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#accueil" class="nav__link">Accueil</a></li>
+        <li><a href="#concept" class="nav__link">Notre univers</a></li>
+        <li><a href="#carte" class="nav__link">La carte</a></li>
+        <li><a href="#galerie" class="nav__link">Galerie</a></li>
+        <li><a href="#infos" class="nav__link">Infos pratiques</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Nous trouver</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+      <div class="hero__bg">
+        <img data-img="coinDetente" alt="Coin détente — salon de thé Les Boudeuses" class="hero__bg-img">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content container">
+        <img data-img="logo" alt="Logo Les Boudeuses" class="hero__logo">
+        <p class="hero__tagline">Bar à salade <span class="hero__dot">•</span> Pâtes <span class="hero__dot">•</span> Coffee shop</p>
+        <h1 class="hero__title">Les Boudeuses</h1>
+        <p class="hero__subtitle">Fast-good le midi, salon de thé l'après-midi.<br>Des produits frais, locaux et faits maison.</p>
+        <div class="hero__actions">
+          <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
+          <a href="#contact" class="btn btn--outline">Nous rendre visite</a>
+        </div>
+        <div class="hero__scroll">
+          <span>Défiler</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concept -->
+    <section class="concept section" id="concept">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Notre univers</span>
+          <h2 class="section__title script">Un lieu, deux ambiances</h2>
+          <p class="section__intro">Au cœur de Saint-Lô, Les Boudeuses vous accueille dans un cadre chaleureux mêlant brique apparente, bois naturel et touches tropicales.</p>
+        </div>
+
+        <div class="concept__grid">
+          <article class="concept__card concept__card--midi">
+            <div class="concept__card-image">
+              <img data-img="formuleSalee" alt="Formule salée — tartine, soupe et boisson">
+              <span class="concept__card-badge">Le midi</span>
+            </div>
+            <div class="concept__card-body">
+              <h3>Côté Salé</h3>
+              <p>Bar à salades sur mesure avec des ingrédients frais achetés chez les primeurs locaux. Pâtes aux sauces maison, gaufres salées, tartines chaudes, soupes et poké bowls.</p>
+              <ul class="concept__list">
+                <li>Compose ta salade</li>
+                <li>Pâtes & poké bowls</li>
+                <li>Gaufres salées</li>
+                <li>Tartines & soupes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="concept__card concept__card--aprem">
+            <div class="concept__card-image">
+              <img data-img="dessertsAssortiment" alt="Assortiment de pâtisseries maison — coffee shop">
+              <span class="concept__card-badge">L'après-midi</span>
+            </div>
+            <div class="concept__card-body">
+              <h3>Côté Sucré & Boissons</h3>
+              <p>Pâtisseries et gâteaux maison, gaufres sucrées, glaces, thés et cafés bio équitables, lattes gourmands et bubble teas. Un véritable salon de thé pour se détendre ou travailler.</p>
+              <ul class="concept__list">
+                <li>Pâtisseries maison</li>
+                <li>Gaufres sucrées</li>
+                <li>Thés & cafés bio</li>
+                <li>Lattes gourmands</li>
+                <li>Bubble teas</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="concept__ambiance">
+          <img data-img="comptoir" alt="Comptoir bar à salades" loading="lazy">
+          <img data-img="salle" alt="Salle du restaurant" loading="lazy">
+          <img data-img="coinTropical" alt="Coin salon de thé" loading="lazy">
+        </div>
+
+        <div class="concept__features">
+          <div class="feature">
+            <div class="feature__icon">🌿</div>
+            <h4>Produits locaux</h4>
+            <p>Ingrédients frais des primeurs du coin</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🏠</div>
+            <h4>Fait maison</h4>
+            <p>Sauces, pâtisseries et recettes artisanales</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">📶</div>
+            <h4>Espace travail</h4>
+            <p>Wi-Fi disponible l'après-midi pour étudier ou télétravailler</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">♿</div>
+            <h4>Accessible PMR</h4>
+            <p>Établissement accessible, animaux acceptés</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- La Carte -->
+    <section class="carte section section--paper" id="carte">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Notre carte</span>
+          <h2 class="section__title script">Compose, déguste, savoure</h2>
+        </div>
+
+        <div class="carte__tabs">
+          <button class="carte__tab carte__tab--active" data-tab="sale">Côté Salé</button>
+          <button class="carte__tab" data-tab="sucre">Côté Sucré</button>
+          <button class="carte__tab" data-tab="boissons">Boissons</button>
+        </div>
+
+        <!-- Côté Salé -->
+        <div class="carte__panel carte__panel--active" id="panel-sale">
+          <div class="carte__highlight">
+            <div class="carte__highlight-image polaroid">
+              <img data-img="saladeFraiche" alt="Compose ta salade">
+            </div>
+            <div class="carte__highlight-content">
+              <h3 class="typewriter">Compose ta salade</h3>
+              <ol class="carte__steps">
+                <li>Choisis ta base</li>
+                <li>Choisis tes ingrédients</li>
+                <li>Termine avec une vinaigrette maison</li>
+              </ol>
+              <div class="carte__prices">
+                <div class="price-card">
+                  <span class="price-card__title">Base + 4 ingrédients</span>
+                  <span class="price-card__price">12,00 €</span>
+                  <span class="price-card__formula">Formule boisson ou dessert : 13,90 €</span>
+                  <span class="price-card__formula">Formule boisson et dessert : 15,60 €</span>
+                </div>
+                <div class="price-card">
+                  <span class="price-card__title">Base + 6 ingrédients</span>
+                  <span class="price-card__price">14,00 €</span>
+                  <span class="price-card__formula">Formule boisson ou dessert : 16,20 €</span>
+                  <span class="price-card__formula">Formule boisson et dessert : 18,00 €</span>
+                </div>
+              </div>
+              <p class="carte__note">Parfait pour un déjeuner léger !</p>
+            </div>
+          </div>
+
+          <div class="carte__grid">
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="patesMaison" alt="Pâtes maison">
+              </div>
+              <h4>Pâtes maison</h4>
+              <p>Préparées avec des sauces faites maison et des ingrédients frais.</p>
+            </div>
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="tartinesChaudes" alt="Tartines chaudes">
+              </div>
+              <h4>Tartines chaudes & soupes</h4>
+              <p>Tartines généreuses et soupes réconfortantes, préparées chaque jour.</p>
+            </div>
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="gaufresSalees" alt="Gaufres salées maison">
+              </div>
+              <h4>Gaufres salées</h4>
+              <ul class="menu-block__list">
+                <li><span>Gaufre salée seule</span><span>8,90 €</span></li>
+                <li><span>Menu Équilibré ★</span><span>13,90 €</span></li>
+                <li><span>Menu Gourmand ★★</span><span>15,90 €</span></li>
+                <li><span>Menu Plaisir</span><span>13,90 €</span></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="saladeBolThon" alt="Poké bowl et box repas">
+              </div>
+              <h4>Poké bowls & box repas</h4>
+              <p>Bols colorés et équilibrés, au choix :</p>
+              <ul class="menu-block__tags">
+                <li>Poulet</li>
+                <li>Poisson</li>
+                <li>Falafels</li>
+                <li>Colombo végétarien</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Côté Sucré -->
+        <div class="carte__panel" id="panel-sucre">
+          <div class="carte__grid carte__grid--2">
+            <div class="menu-block menu-block--large">
+              <div class="menu-block__image polaroid">
+                <img data-img="fondantChocolat" alt="Fondant au chocolat maison">
+              </div>
+              <h4>Pâtisseries & gâteaux maison</h4>
+              <p>Muffins, cheesecakes, fondants au chocolat, verrines et bien d'autres douceurs artisanales préparées chaque jour.</p>
+            </div>
+            <div class="menu-block menu-block--large">
+              <div class="menu-block__image polaroid">
+                <img data-img="gaufreSucre" alt="Gaufre sucrée maison">
+              </div>
+              <h4>Gaufres sucrées</h4>
+              <p>Gaufres dorées saupoudrées de sucre glace, préparées devant vous. Un classique indémodable de notre salon de thé.</p>
+            </div>
+            <div class="menu-block menu-block--large">
+              <div class="menu-block__image polaroid">
+                <img data-img="cafeGourmand" alt="Café gourmand">
+              </div>
+              <h4>Café gourmand</h4>
+              <p>Un café accompagné de nos mini pâtisseries maison : fondant, meringue, chantilly… Le plaisir d'un goûter complet.</p>
+            </div>
+          </div>
+          <div class="carte__special">
+            <img data-img="vinLaBoudeuse" alt="La Boudeuse — vin des Côtes Catalanes" class="carte__special-img">
+            <div>
+              <h4 class="script">La Boudeuse</h4>
+              <p>Notre sélection de vin des Côtes Catalanes — Mas Bouscarel. Une bouteille à partager entre amis ou à emporter.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boissons -->
+        <div class="carte__panel" id="panel-boissons">
+          <div class="carte__grid carte__grid--3">
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="latteGourmand" alt="Latte gourmand">
+              </div>
+              <h4>Lattes gourmands</h4>
+              <p>Préparés avec du lait d'origine animale ou végétale. Caramel, vanille, spéculoos…</p>
+            </div>
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="cafeEspresso" alt="Thé et café bio">
+              </div>
+              <h4>Thés & cafés bio</h4>
+              <p>Une sélection de thés et cafés issus du commerce équitable, pour un moment de détente authentique.</p>
+            </div>
+            <div class="menu-block">
+              <div class="menu-block__image">
+                <img data-img="bubbleTea" alt="Bubble tea aux fruits">
+              </div>
+              <h4>Bubble teas</h4>
+              <p>Des bubble teas aux fruits, frais et colorés, parfaits pour l'après-midi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="galerie section" id="galerie">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Galerie</span>
+          <h2 class="section__title script">L'ambiance des Boudeuses</h2>
+          <p class="section__intro">Découvrez l'ambiance de notre restaurant à Saint-Lô.</p>
+        </div>
+
+        <div class="galerie__grid">
+          <!-- Lieu & établissement -->
+          <figure class="galerie__item galerie__item--large" data-caption="Notre comptoir — bar à salades & pâtisseries">
+            <img data-img="comptoir" alt="Comptoir du restaurant Les Boudeuses" loading="lazy">
+          </figure>
+          <figure class="galerie__item" data-caption="Façade du restaurant — 30 rue des Maréchaux, Saint-Lô">
+            <img data-img="facade" alt="Façade du restaurant Les Boudeuses" loading="lazy">
+          </figure>
+          <figure class="galerie__item" data-caption="La salle — espace chaleureux et intimiste (~25 places)">
+            <img data-img="salle" alt="Salle du restaurant" loading="lazy">
+          </figure>
+          <figure class="galerie__item" data-caption="Notre vitrine de pâtisseries et verrines maison">
+            <img data-img="vitrinePatisseries" alt="Vitrine pâtisseries" loading="lazy">
+          </figure>
+          <figure class="galerie__item" data-caption="Coin tropical — salon de thé et espace détente">
+            <img data-img="coinTropical" alt="Coin tropical du restaurant" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="galerie__instagram">
+          <a href="https://www.instagram.com/les_boudeuses_stlo/" target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Suivez-nous sur Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infos pratiques -->
+    <section class="infos section section--cream" id="infos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Infos pratiques</span>
+          <h2 class="section__title script">Tout ce qu'il faut savoir</h2>
+        </div>
+
+        <div class="infos__grid">
+          <div class="info-card info-card--hours">
+            <h3>Horaires d'ouverture</h3>
+            <div class="hours">
+              <div class="hours__row">
+                <span class="hours__day">Mardi — Samedi</span>
+                <span class="hours__time">10h30 — 18h00 / 18h30</span>
+              </div>
+              <p class="hours__note">Service continu</p>
+              <div class="hours__row hours__row--closed">
+                <span class="hours__day">Lundi & Dimanche</span>
+                <span class="hours__time">Fermé</span>
+              </div>
+            </div>
+            <div class="status-badge" id="open-status">
+              <span class="status-badge__dot"></span>
+              <span class="status-badge__text">Vérification…</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Services</h3>
+            <ul class="info-list">
+              <li>Sur place ou à emporter</li>
+              <li>Wi-Fi disponible l'après-midi</li>
+              <li>Espace de travail / étude</li>
+              <li>Salle intimiste (~25 places)</li>
+              <li>Accessible PMR</li>
+              <li>Animaux acceptés</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>Notre concept</h3>
+            <p>Les Boudeuses, c'est la rencontre entre un bar à salades healthy le midi et un coffee shop cosy l'après-midi. Un lieu où l'on mange bien, où l'on prend le temps, et où l'on se sent chez soi.</p>
+            <p class="info-card__since">Depuis août 2022 à Saint-Lô</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title script">Venez nous voir</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <div class="contact__icon">📍</div>
+              <div>
+                <h4>Adresse</h4>
+                <p>30 rue des Maréchaux<br>50000 Saint-Lô</p>
+                <a href="https://maps.google.com/?q=30+rue+des+Maréchaux+50000+Saint-Lô" target="_blank" rel="noopener noreferrer" class="contact__link">Itinéraire Google Maps →</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon">📞</div>
+              <div>
+                <h4>Téléphone</h4>
+                <p>
+                  <a href="tel:+33233576101">02 33 57 61 01</a><br>
+                  <a href="tel:+33651983468">06 51 98 34 68</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon">✉️</div>
+              <div>
+                <h4>E-mail</h4>
+                <p><a href="mailto:lesboudeuses.stlo@gmail.com">lesboudeuses.stlo@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div>
+                <h4>Instagram</h4>
+                <p><a href="https://www.instagram.com/les_boudeuses_stlo/" target="_blank" rel="noopener noreferrer">@les_boudeuses_stlo</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <iframe
+              title="Carte — Les Boudeuses, 30 rue des Maréchaux, Saint-Lô"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-1.0975%2C49.1115%2C-1.0855%2C49.1175&layer=mapnik&marker=49.1145%2C-1.0915"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img data-img="logo" alt="Les Boudeuses" class="footer__logo">
+          <p>Bar à salades • Pâtes • Coffee shop<br>Saint-Lô, Normandie</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#accueil">Accueil</a>
+          <a href="#concept">Notre univers</a>
+          <a href="#carte">La carte</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Les Boudeuses — Tous droits réservés</p>
+        <p class="footer__legal"><a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Fermer">&times;</button>
+    <img src="" alt="" class="lightbox__img" id="lightbox-img">
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="js/images.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
