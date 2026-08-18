@@ -16,28 +16,50 @@ function initNavigation() {
   const header = document.getElementById('header');
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
+  const navBackdrop = document.getElementById('nav-backdrop');
   const navLinks = document.querySelectorAll('.nav__link');
+
+  function setNavOpen(isOpen, animate = false) {
+    navMenu.classList.toggle('nav__menu--animate', animate);
+    navBackdrop?.classList.toggle('nav__backdrop--animate', animate);
+    navMenu.classList.toggle('nav__menu--open', isOpen);
+    navToggle.classList.toggle('nav__toggle--open', isOpen);
+    header.classList.toggle('header--menu-open', isOpen);
+    navBackdrop?.classList.toggle('nav__backdrop--visible', isOpen);
+    document.body.classList.toggle('nav-open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    navBackdrop?.setAttribute('tabindex', isOpen ? '0' : '-1');
+  }
 
   window.addEventListener('scroll', () => {
     header.classList.toggle('header--scrolled', window.scrollY > 50);
   });
 
   navToggle.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('nav__menu--open');
-    navToggle.setAttribute('aria-expanded', isOpen);
+    setNavOpen(!navMenu.classList.contains('nav__menu--open'), true);
   });
 
+  navBackdrop?.addEventListener('click', () => setNavOpen(false, true));
+
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('nav__menu--open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', () => setNavOpen(false, true));
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      navMenu.classList.remove('nav__menu--open');
-      navToggle.setAttribute('aria-expanded', 'false');
+      setNavOpen(false, true);
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    setNavOpen(false, false);
+  });
+
+  navMenu.addEventListener('transitionend', (e) => {
+    if (e.target === navMenu) {
+      navMenu.classList.remove('nav__menu--animate');
+      navBackdrop?.classList.remove('nav__backdrop--animate');
     }
   });
 }
